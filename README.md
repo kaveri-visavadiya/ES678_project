@@ -92,7 +92,9 @@ Primary metric: MAE in invoices. RMSE, Poisson deviance, and R-squared are suppl
 ## Citation
 
 Chen, D. (2015). *Online Retail* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33.
+
 [scikit-learn — PoissonRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.PoissonRegressor.html).
+
 [scikit-learn — RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html).
+
 [scikit-learn — Regression metrics](https://scikit-learn.org/stable/modules/model_evaluation.html).
-See `REPRODUCIBILITY.md` for the exact date-window correction, split details, saved-output audit, and the run record that should be completed before publication.
