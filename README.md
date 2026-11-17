@@ -26,7 +26,7 @@ online-retail-purchase-frequency/
 - **Period:** 1 December 2010 to 9 December 2011.
 - **License:** UCI lists the dataset under Creative Commons Attribution 4.0 (CC BY 4.0). 
 
-## Run the notebook
+## How to run the notebook? Reproducibility
 
 Use Python with Jupyter Notebook or JupyterLab.
 
