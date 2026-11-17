@@ -88,6 +88,10 @@ The intended split is a fixed customer-level 60/20/20 train/validation/test spli
 
 Primary metric: MAE in invoices. RMSE, Poisson deviance, and R-squared are supplementary metrics. Predictions are continuous expected counts; negative predictions are clipped to zero.
 
+## AI-use Disclosure
+
+ChatGPT (OpenAI, GPT-6) and Claude Sonnet 5.5 assisted with notebook review, identification of reproducibility issues, and drafting the documentation and paper.
+
 ## Citation
 
 Chen, D. (2015). *Online Retail* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33.
