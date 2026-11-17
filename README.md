@@ -9,10 +9,9 @@ This project uses the UCI Online Retail transaction dataset to construct one cus
 ```text
 online-retail-purchase-frequency/
 ├── README.md
-├── REPRODUCIBILITY.md
 ├── paper/
 │   └── ES678_proj.pdf
-├── notebooks/
+├── notebook/
 │   └── ES678_proj.ipynb
 ├── data/
     └── Online Retail.xlsx       # downloaded locally; do not commit by default
