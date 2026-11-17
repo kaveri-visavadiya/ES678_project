@@ -4,7 +4,7 @@
 
 This project uses the UCI Online Retail transaction dataset to construct one customer-level observation per eligible customer and compare simple baselines with Poisson regression and random-forest regression.
 
-## Repository contents
+## Repository structure
 
 ```text
 online-retail-purchase-frequency/
@@ -18,7 +18,7 @@ online-retail-purchase-frequency/
     └── Online Retail.xlsx       # downloaded locally; do not commit by default
 ```
 
-## Dataset
+## About the Dataset
 
 - **Source:** [UCI Machine Learning Repository — Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail)
 - **Dataset DOI:** [10.24432/C5BW33](https://doi.org/10.24432/C5BW33)
@@ -52,7 +52,8 @@ https://archive.ics.uci.edu/static/public/352/online+retail.zip
 
 The source data is not included in this repository. The notebook downloads the UCI ZIP archive automatically and extracts `Online Retail.xlsx` into `data/`. Alternatively, download the .xlsx file from the UCI dataset page and place it at `data/Online Retail.xlsx`.
 
-## Prediction task
+## About the project 
+### Prediction task
 
 - **Unit:** one customer (`CustomerID`).
 - **Prediction cutoff:** 1 September 2011.
@@ -64,7 +65,7 @@ The target is a **count**; a customer with no completed invoice in the outcome w
 
 An invoice can contain multiple product lines. The target counts distinct invoice numbers, not transaction rows or product lines.
 
-## Cleaning and feature construction
+### Cleaning and feature construction
 
 The notebook:
 1. Removes rows without a customer ID or valid invoice date.
@@ -74,7 +75,7 @@ The notebook:
 5. Aggregates invoice lines to customer-level behavioural features using only the observation window.
 6. Counts distinct invoice numbers in the outcome window to create the target.
 
-## Models
+### Models
 
 The notebook compares:
 - Training-set mean baseline (`DummyRegressor`).
@@ -82,7 +83,7 @@ The notebook compares:
 - Poisson regression with median imputation, `log1p`, standardization, and L2 regularization.
 - Random forest regression with median imputation.
 
-## Evaluation
+### Evaluation
 
 The intended split is a fixed customer-level 60/20/20 train/validation/test split with random seed 42. Model selection is based on validation MAE. The test set is held out for final reporting. 
 
